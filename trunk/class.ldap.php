@@ -1,23 +1,63 @@
 <?php
+
 /**
- * iitb ldap class
- *   this class helps to work with the ldap data easily
- * @author apnerve <apnerve@gmail.com>
+ * The ldap class for easier ldap access
+ * @author praveen <apnerve@gmail.com>
  */
 
-class ldap {  
-  public $server = 'ldap.iitb.ac.in';
-  public $searchkey;
-  public $id;
+class ldap {
+  private $server = 'ldap.iitb.ac.in';
+  private $base_dn = 'dc=iitb,dc=ac,dc=in';
+  public $username;
+  public $password;
+  public $searchKey;
+
+  function __construct() {
+
+  }
+
+  function name() {
+
+  }
+
+  function surname() {
+    
+  }
+
+  function roll() {
+
+  }
+
+  function email() {
+
+  }
   
-  function __construct(argument) {
+  function dept() {
+  
+  }
+  
+  function year() {
     
   }
   
-  function getAllDetailsById($id) {
+  function degree() {
     
   }
   
-  function search
+  function homepage() {
+    
+  }
   
+  private function hasHomepage() {
+    
+  }
+  
+  private function resultEntry() {
+    
+  }
+  
+  function __destruct() {
+    ldap_close();
+  }
+
 }
